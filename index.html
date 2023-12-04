@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="form-nfs">
+    <div class="nfs-form">
         <form>
             <div class="form-nfs-content">
                 <div class="form-nfs-content-inputs">
@@ -33,6 +33,10 @@
                         <div class="form-nfs-PrestadorData-telefonePrestador">
                             <label for="telefone">Telefone do Prestador</label>
                             <input type="text" id="telefonePrestador" name="telefone">
+                        </div>
+                        <div class="form-nfs-PrestadorData-CnpjPrestador">
+                            <label for="Cnpj">Cnpj do Prestador</label>
+                            <input type="text" id="CnpjPrestador" name="CNPJ>
                         </div>
                     </div>
                     <div class="form-nfs-TomadorData">
@@ -73,11 +77,12 @@
                     </div>
                 </div>
                 
-                <input class="form-nfs-BotaoSubmit" type="button" id="buttonGerarNfsE" value="Gerar">
+                
             </div>
+            <input class="form-nfs-BotaoSubmit" type="button" id="buttonGerarNfsE" value="Gerar">
         </form>
     </div>
-
+        
 
     <div class="nfs" id="notaFiscalDeServico">
         <div class="nfs-header">
@@ -110,16 +115,16 @@
                         <p id="TelefonePrestadorNFS">Telefone: (61)0000-0000</p>
                     </div>
                     <p id="EmailPrestadorNFS">email@gmail.com</p>
-                    <p>CNPJ - 00.000.000/0000-00</p>
+                    <p id="CnpjPrestadorNFS">CNPJ - 00.000.000/0000-00</p>
                 </div>
                 <div class="sub-header-data2">
                     <div class="sub-header-data2-DataGerNFE">
                         <p class="labelDataGerNFE">Data de Geração da NFS-e</p>
-                        <p class="Content">00/00/0000 00:00</p>
+                        <p id="DataGerecaoNfs" class="Content">00/00/0000 00:00</p>
                     </div>
                     <div class="sub-header-data2-DataEmissão">
                         <p>Data de Emissão</p>
-                        <p class="Content">00/00/0000 00:00</p>
+                        <p id="DataEmissaoNFS" class="Content">00/00/0000 00:00</p>
                     </div>
                     <div class="sub-header-data2-CodAutenticacao">
                         <p>Código de Autenticidade</p>
@@ -143,45 +148,33 @@
                 <div class="nfs-tomadorData-content-firstColumn">
                     <div class="nfs-tomadorData-content-firstColumn-CNPJCPF">
                         <label for="CNPJ/CPF">CNPJ/CPF: </label>
-                        <p>00.000.000/0000-00</p>
+                        <p id="CpfCnpjTomadorNFS">00.000.000/0000-00</p>
                     </div>
                     <div class="nfs-tomadorData-content-firstColumn-NomeRazaoSocial">
                         <label for="NomeOuRazaoSocial">Nome ou Razão social: </label>
-                        <p>Tribunal blablabla bla</p>
+                        <p id="NomeRazaoSocialTomadorNFS">Tribunal blablabla bla</p>
                     </div>
                     <div class="nfs-tomadorData-content-firstColumn-Endereco">
                         <label for="Endereco">Endereço: </label>
-                        <p>Praça do Buriti Bloco D</p>
+                        <p id="EnderecoTomadorNFS">Praça do Buriti Bloco D</p>
                     </div>
                     <div class="nfs-tomadorData-content-firstColumn-Complemento">
                         <label for="Complemento">Complemento: </label>
-                        <p>PC Municipal QD 02 LT 06</p>
+                        <p id="ComplementoTomadorNFS">PC Municipal QD 02 LT 06</p>
                     </div>
                     <div class="nfs-tomadorData-content-firstColumn-CEP">
                         <label for="CEP">CEP: </label>
-                        <p>70094-901</p>
+                        <p id="CEPTomadorNFS">70094-901</p>
                     </div>
                     <div class="nfs-tomadorData-content-firstColumn-Telefone">
                         <label for="Telefone">Telefone: </label>
-                        <p>(61)3342-2122</p>
+                        <p id="TelefoneTomadorNFS">(61)3342-2122</p>
                     </div>
                 </div>
                 <div class="nfs-tomadorData-content-secondColumn">
-                    <div class="nfs-tomadorData-content-secondColumn-Numero">
-                        <label for="Numero">Numero: </label>
-                        <p>2</p>
-                    </div>
-                    <div class="nfs-tomadorData-content-secondColumn-Bairro">
-                        <label for="Bairro">Bairro: </label>
-                        <p>Zona Cívico-Administrativa</p>
-                    </div>
-                    <div class="nfs-tomadorData-content-secondColumn-Cidade">
-                        <label for="Cidade">Cidade: </label>
-                        <p>Brasília/DF</p>
-                    </div>
                     <div class="nfs-tomadorData-content-secondColumn-Email">
                         <label for="Email">E-mail: </label>
-                        <p>tresaude@tre-df.jus.br</p>
+                        <p id="emailTomadorNSF">tresaude@tre-df.jus.br</p>
                     </div>
                 </div>
             </div>

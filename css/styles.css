@@ -3,17 +3,8 @@
     padding: 0;
 }
 
-.form-nfs{
-    margin: 10px auto;
-    width: 40%;
+.nfs-form{
     border: 1px solid black;
-}
-
-.form-nfs form{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    justify-content: center;
 }
 
 .form-nfs-content{
@@ -28,7 +19,7 @@
 }
 
 .form-nfs-PrestadorData,
-.form-nfs-TomadorData {
+.form-nfs-TomadorData{
     display: flex;
     flex-direction: column;
 }
@@ -37,6 +28,7 @@
 .form-nfs form div input{
     margin-bottom: 15px;
     width: 50%;
+    margin-top: 10px;
 }
 
 #ValorServico{
