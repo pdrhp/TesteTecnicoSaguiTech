@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-nfs{
+    margin: 10px auto;
+    width: 40%;
+    border: 1px solid black;
+}
+
+.form-nfs form{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.form-nfs-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-nfs-content-inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-nfs-PrestadorData,
+.form-nfs-TomadorData {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-nfs form div input{
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+#ValorServico{
+    width: 20%;
+}
+
+#DescricaoServico{
+    height: 70px;
+    width: 100%;
+    vertical-align: top;
+    word-wrap: break-word;
+    resize: none;
+}
+
+
+.form-nfs-BotaoSubmit{
+    width: 50%;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.nfs{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+}
+
+.nfs-header{
+    border:  1px solid black;
+    display: flex;
+}
+
+.nfs-header-1{
+    border:  1px solid black;
+    flex: 1;
+}
+
+nfs-header-2{
+    border: 1px solid black;
+    flex: 1;
+}
+
+.nfs-header-2-serieDocumento{
+    border: 1px solid black;
+}
+
+.serieDocumentoContent{
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.nfs-header-2-numeroNotaFiscal{
+    border: 1px solid black;
+}
+
+.NumeroNotaFiscalContent{
+    text-align: center;
+}
+
+.sub-header{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+
+.sub-header-title{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.sub-header-title p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sub-header-content{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-header-serviceProviderData{
+    border: 1px solid black;
+    flex: 7;
+}
+
+.sub-header-serviceProviderData p{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.sub-header-serviceProviderData .NomePrestadorContent{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sub-header-serviceProviderData-CepETelefone{
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-header-data2{
+    border: 1px solid black;
+    flex: 2;
+}
+
+.sub-header-data2 div{
+    border: 1px solid black;
+}
+
+.sub-header-data2 p{
+    margin-left: 5px;
+}
+
+.sub-header-data2 .Content{
+    text-align: center;
+    font-weight: bold;
+} 
+
+.sub-header-qrcode{
+    border: 1px solid black;
+    flex: 1.5;
+}
+
+.qrCode{
+    width: 100%;
+    align-self: center;
+}
+
+.nfs-tomadorData{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.nfs-tomadorData-title{
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.nfs-tomadorData-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.nfs-tomadorData-content label{
+    font-weight: bold;
+}
+
+.nfs-tomadorData-content-firstColumn{
+    flex: 2;
+    border: 1px solid black;
+}
+
+.nfs-tomadorData-content-firstColumn div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.nfs-tomadorData-content-secondColumn{
+    flex: 1;
+    border: 1px solid black;
+}
+
+.nfs-tomadorData-content-secondColumn div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.nfs-descricaoServicos{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.nfs-descricaoServicosTitle{
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.nfs-descricaoServicosContent{
+    border: 1px solid black;
+    height: 150px;
+}
+
+.nfs-DetalhamentoDosTributos{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.nfs-DetalhamentoDosTributos-title{
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.nfs-DetalhamentoDosTributos-content{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.nfs-DetalhamentoDosTributos-content div{
+    border: 1px solid black;
+    flex: 1;
+}
+
+.nfs-DetalhamentoDosTributos-content label{
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.nfs-DetalhamentoDosTributos-content div p{
+    text-align: end;
+    margin-right: 3px;
+}
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="form-nfs">
+        <form>
+            <div class="form-nfs-content">
+                <div class="form-nfs-content-inputs">
+                    <div class="form-nfs-PrestadorData">
+                        <div class="form-nfs-PrestadorData-NomePrestadorEmpresa">
+                            <label for="nomePrestador">Nome do Prestador</label>
+                            <input type="text" id="nomePrestadorPrestador" name="nomePrestador">
+                        </div>
+                        <div class="form-nfs-PrestadorData-EnderecoPrestador">
+                            <label for="enderecoPrestador">Endereço do Prestador</label>
+                            <input type="text" id="enderecoPrestador" name="endereco">
+                        </div>
+                        <div class="form-nfs-PrestadorData-CEPPrestador">
+                            <label for="cep">CEP do Prestador</label>
+                            <input type="text" id="cepPrestador" name="cep">
+                        </div>
+                        <div class="form-nfs-PrestadorData-emailPrestador">
+                            <label for="email">E-mail do Prestador</label>
+                            <input type="text" id="emailPrestador" name="telefone">
+                        </div>
+                        <div class="form-nfs-PrestadorData-telefonePrestador">
+                            <label for="telefone">Telefone do Prestador</label>
+                            <input type="text" id="telefonePrestador" name="telefone">
+                        </div>
+                    </div>
+                    <div class="form-nfs-TomadorData">
+                        <div class="form-nfs-TomadorData-NomeTomadorEmpresa">
+                            <label for="nomeTomador">Nome do Tomador</label>
+                            <input type="text" id="nomeTomador" name="nomeTomador">
+                        </div>
+                        <div class="form-nfs-TomadorData-EnderecoTomador">
+                            <label for="endereco">Endereço do Tomador</label>
+                            <input type="text" id="enderecoTomador" name="endereco">
+                        </div>
+                        <div class="form-nfs-TomadorData-ComplementoTomador">
+                            <label for="Complemento">Complem. do Tomador</label>
+                            <input type="text" id="ComplementoTomador" name="Complemento">
+                        </div>
+                        <div class="form-nfs-TomadorData-CEPTomador">
+                            <label for="cep">CEP do Tomador</label>
+                            <input type="text" id="cepTomador" name="cep">
+                        </div>
+                        <div class="form-nfs-TomadorData-emailTomador">
+                            <label for="email">E-mail do Tomador</label>
+                            <input type="text" id="emailTomador" name="telefone">
+                        </div>
+                        <div class="form-nfs-TomadorData-telefoneTomador">
+                            <label for="telefone">Telefone do Tomador</label>
+                            <input type="text" id="telefoneTomador" name="telefone">
+                        </div>
+                    </div>
+                </div>
+                <div class="nfs-form-servicoData">
+                    <div class="form-nfs-servicoData-ValorServico">
+                        <label for="ValorServico">Valor do serviço</label>
+                        <input type="number" id="ValorServico" name="valorServico">
+                    </div>
+                    <div class="form-nfs-servicoData-DescServico">
+                        <label for="DescricaoServico">Descrição do serviço</label>
+                        <textarea id="DescricaoServico"></textarea>
+                    </div>
+                </div>
+                
+                <input class="form-nfs-BotaoSubmit" type="button" value="Gerar">
+            </div>
+        </form>
+    </div>
+
+
+    <div class="nfs">
+        <div class="nfs-header">
+            <div class="nfs-header-1">
+                <h2>Governo do Distrito Federal</h2>
+                <p>Secretaria de Estado de Fazenda do Distrito Federal</p>
+                <p>Fone: () - 156 - Opção 3 - www.sefaz.df.gov.br</p>
+            </div>
+            <div class="nfs-header-2">
+                <div class="nfs-header-2-serieDocumento">
+                    <p class="serieDocumentoLabel"> Série do Documento</p>
+                    <p class="serieDocumentoContent"> Nota Fiscal de Serviço Eletrônica - NFS-e</p>
+                </div>
+                <div class="nfs-header-2-numeroNotaFiscal">
+                    <p class="NumeroNotaFiscalLabel">Número da Nota Fiscal</p>
+                    <p class="NumeroNotaFiscalContent">00</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-header">
+            <div class="sub-header-title">
+                <p>Dados do prestador de serviço</p>
+            </div>
+            <div class="sub-header-content">
+                <div class="sub-header-serviceProviderData">
+                    <p class="NomePrestadorContent">Nome do Prestador/Empresa</p>
+                    <p>Endereço</p>
+                    <div class="sub-header-serviceProviderData-CepETelefone">
+                        <p>CEP 00000-000</p>
+                        <p>Telefone: (61)0000-0000</p>
+                    </div>
+                    <p>email@gmail.com</p>
+                    <p>CNPJ - 00.000.000/0000-00</p>
+                </div>
+                <div class="sub-header-data2">
+                    <div class="sub-header-data2-DataGerNFE">
+                        <p class="labelDataGerNFE">Data de Geração da NFS-e</p>
+                        <p class="Content">00/00/0000 00:00</p>
+                    </div>
+                    <div class="sub-header-data2-DataEmissão">
+                        <p>Data de Emissão</p>
+                        <p class="Content">00/00/0000 00:00</p>
+                    </div>
+                    <div class="sub-header-data2-CodAutenticacao">
+                        <p>Código de Autenticidade</p>
+                        <p class="Content">5A3C0AB86</p>
+                    </div>
+                    <div class="sub-header-data2-respRetencao">
+                        <p>Responsavel pela retenção</p>
+                        <p class="Content">Tomador</p>
+                    </div>
+                </div>
+                <div class="sub-header-qrcode">
+                    <img class="qrCode" src="https://www.canalautismo.com.br/wp-content/uploads/2018/05/qrcode-RevistaAutismo.png" alt="QrCode">
+                </div>
+            </div>
+        </div>
+        <div class="nfs-tomadorData">
+            <div class="nfs-tomadorData-title">
+                <p>Dados do Tomador de Serviços</p>
+            </div>
+            <div class="nfs-tomadorData-content">
+                <div class="nfs-tomadorData-content-firstColumn">
+                    <div class="nfs-tomadorData-content-firstColumn-CNPJCPF">
+                        <label for="CNPJ/CPF">CNPJ/CPF: </label>
+                        <p>00.000.000/0000-00</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-firstColumn-NomeRazaoSocial">
+                        <label for="NomeOuRazaoSocial">Nome ou Razão social: </label>
+                        <p>Tribunal blablabla bla</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-firstColumn-Endereco">
+                        <label for="Endereco">Endereço: </label>
+                        <p>Praça do Buriti Bloco D</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-firstColumn-Complemento">
+                        <label for="Complemento">Complemento: </label>
+                        <p>PC Municipal QD 02 LT 06</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-firstColumn-CEP">
+                        <label for="CEP">CEP: </label>
+                        <p>70094-901</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-firstColumn-Telefone">
+                        <label for="Telefone">Telefone: </label>
+                        <p>(61)3342-2122</p>
+                    </div>
+                </div>
+                <div class="nfs-tomadorData-content-secondColumn">
+                    <div class="nfs-tomadorData-content-secondColumn-Numero">
+                        <label for="Numero">Numero: </label>
+                        <p>2</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-secondColumn-Bairro">
+                        <label for="Bairro">Bairro: </label>
+                        <p>Zona Cívico-Administrativa</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-secondColumn-Cidade">
+                        <label for="Cidade">Cidade: </label>
+                        <p>Brasília/DF</p>
+                    </div>
+                    <div class="nfs-tomadorData-content-secondColumn-Email">
+                        <label for="Email">E-mail: </label>
+                        <p>tresaude@tre-df.jus.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nfs-descricaoServicos">
+            <div class="nfs-descricaoServicosTitle">
+                <p>Descrição dos Serviços</p>
+            </div>
+            <div class="nfs-descricaoServicosContent">
+                <p>Agenciamento de Serviços de Corridas de Taxi Realizadas por Taxistas Autonomos (Isentos de impostos) - Depositar na CAIXA BANCO 104 Agencia: 0002 C/C 4772-0 / ou PIX 244270020001-20 Aliquota ISS de 2%, sujeito a retenção do ISSQN a alíquota, NF Referente ao mês de Fevereiro/2023, Total de KM 4, 462,00, IMR 195,62, PIX 24.427.002/0001-20 CONTA CAIXA AGENCIA 0002 OP 003 CONTA 4772-0</p>
+            </div>
+        </div>
+        <div class="nfs-DetalhamentoDosTributos">
+            <div class="nfs-DetalhamentoDosTributos-title">
+                <p>Detalhamento dos Tributos</p>
+            </div>
+            <div class="nfs-DetalhamentoDosTributos-content">
+                <div class="nfs-DetalhamentoDosTributos-content-valorTotalDosServicos">
+                    <label for="valorTotalDosServicos">Vl. Total dos Serviços </label>
+                    <p>R$ 195,62</p>
+                </div>
+                <div class="nfs-DetalhamentoDosTributos-content-ISS">
+                    <label for="ISS">ISS </label>
+                    <p>R$ 3,91</p>
+                </div>
+                <div class="nfs-DetalhamentoDosTributos-content-COFINS">
+                    <label for="COFINS">COFINS </label>
+                    <p>R$ 0,00</p>
+                </div>
+                <div class="nfs-DetalhamentoDosTributos-content-PIS">
+                    <label for="PIS">PIS </label>
+                    <p>R$ 0,00</p>
+                </div>
+                <div class="nfs-DetalhamentoDosTributos-content-CSLL">
+                    <label for="CSLL">CSLL </label>
+                    <p>R$ 0,00</p>
+                </div>
+                <div class="nfs-DetalhamentoDosTributos-content-INSS">
+                    <label for="INSS">INSS </label>
+                    <p>R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
