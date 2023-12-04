@@ -69,11 +69,11 @@
                 <div class="nfs-form-servicoData">
                     <div class="form-nfs-servicoData-ValorServico">
                         <label for="ValorServico">Valor do serviço</label>
-                        <input type="number" id="ValorServico" name="valorServico">
+                        <input type="number" id="ValorServicoForm" name="valorServico">
                     </div>
                     <div class="form-nfs-servicoData-DescServico">
                         <label for="DescricaoServico">Descrição do serviço</label>
-                        <textarea id="DescricaoServico"></textarea>
+                        <textarea id="DescricaoServicoForm"></textarea>
                     </div>
                 </div>
                 
@@ -184,7 +184,7 @@
                 <p>Descrição dos Serviços</p>
             </div>
             <div class="nfs-descricaoServicosContent">
-                <p>Agenciamento de Serviços de Corridas de Taxi Realizadas por Taxistas Autonomos (Isentos de impostos) - Depositar na CAIXA BANCO 104 Agencia: 0002 C/C 4772-0 / ou PIX 244270020001-20 Aliquota ISS de 2%, sujeito a retenção do ISSQN a alíquota, NF Referente ao mês de Fevereiro/2023, Total de KM 4, 462,00, IMR 195,62, PIX 24.427.002/0001-20 CONTA CAIXA AGENCIA 0002 OP 003 CONTA 4772-0</p>
+                <p id="descricaoServicoNFS">Agenciamento de Serviços de Corridas de Taxi Realizadas por Taxistas Autonomos (Isentos de impostos) - Depositar na CAIXA BANCO 104 Agencia: 0002 C/C 4772-0 / ou PIX 244270020001-20 Aliquota ISS de 2%, sujeito a retenção do ISSQN a alíquota, NF Referente ao mês de Fevereiro/2023, Total de KM 4, 462,00, IMR 195,62, PIX 24.427.002/0001-20 CONTA CAIXA AGENCIA 0002 OP 003 CONTA 4772-0</p>
             </div>
         </div>
         <div class="nfs-DetalhamentoDosTributos">
@@ -194,27 +194,27 @@
             <div class="nfs-DetalhamentoDosTributos-content">
                 <div class="nfs-DetalhamentoDosTributos-content-valorTotalDosServicos">
                     <label for="valorTotalDosServicos">Vl. Total dos Serviços </label>
-                    <p>R$ 195,62</p>
+                    <p id="ValorTotalServicosNFS">R$ 195,62</p>
                 </div>
                 <div class="nfs-DetalhamentoDosTributos-content-ISS">
                     <label for="ISS">ISS </label>
-                    <p>R$ 3,91</p>
+                    <p id="TributoISSValorNFS">R$ 3,91</p>
                 </div>
                 <div class="nfs-DetalhamentoDosTributos-content-COFINS">
                     <label for="COFINS">COFINS </label>
-                    <p>R$ 0,00</p>
+                    <p id="TributoCOFINSValorNFS">R$ 0,00</p>
                 </div>
                 <div class="nfs-DetalhamentoDosTributos-content-PIS">
                     <label for="PIS">PIS </label>
-                    <p>R$ 0,00</p>
+                    <p id="TributoPISValorNFS">R$ 0,00</p>
                 </div>
                 <div class="nfs-DetalhamentoDosTributos-content-CSLL">
                     <label for="CSLL">CSLL </label>
-                    <p>R$ 0,00</p>
+                    <p id="TributoCSLLValorNFS">R$ 0,00</p>
                 </div>
                 <div class="nfs-DetalhamentoDosTributos-content-INSS">
                     <label for="INSS">INSS </label>
-                    <p>R$ 0,00</p>
+                    <p id="TributoINSSValorNFS">R$ 0,00</p>
                 </div>
             </div>
         </div>
